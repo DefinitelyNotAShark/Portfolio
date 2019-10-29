@@ -1,0 +1,149 @@
+/*AUTO*/
+
+header{   
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.banner{
+    font-size: 50px;
+    text-shadow: 2px 2px #000000;
+}
+
+.belowBanner{
+    margin-top: 10px;
+    font-size: 25;
+   text-shadow: 2px 2px #000000;
+}
+
+
+h1{
+    text-align: center;
+}
+main{
+    font-family: 'Merriweather', serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+footer{
+    font-family: 'Libre Franklin', sans-serif; 
+    background-color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+/*THESE ARE GOTTEN FROM https://www.w3schools.com/css/css_navbar.asp*/
+
+/*Nav Bar whole*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+}
+
+/*Nav Bar elements*/
+li a{
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 8px 25px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/*Nav bar hover*/
+li a:hover{
+    background-color: #3C8C4A;
+    color: #FFFFFF;
+}
+
+/*CLASSES*/
+
+.active {
+  background-color: #203B39;
+  color: #FFFFFF;
+}
+
+.heroImageHeader
+{
+    background-image: url("../images/back.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;   
+    
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.thumbnail{
+    height: 40vh;
+    width: 32vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/thumbnailStatic.png"); 
+    border-radius: 5px;
+}
+
+
+.thumbnail:hover {
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    background-image: url("../images/thumbnailImage.gif");
+}
+
+.heroText{  
+    color: #FFFFFF;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+/*
+.heroImageStars{ 
+
+    width: 100vw;
+    height: 100vh;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/stars.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+*/
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
