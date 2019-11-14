@@ -22,6 +22,10 @@ header{
     margin-top: 60px;
 }
 
+.h2{
+    text-align: center;
+}
+
 .belowBanner{
     margin-top: 10px;
     font-size: 30;
@@ -93,6 +97,33 @@ li a:hover{
   color: #FFFFFF;
 }
 
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/
+
+.wrapper{
+    padding: 10px;
+    
+    display: grid;
+    grid-gap: 10px;
+    
+    grid-template-columns: 2;
+    grid-auto-rows: 1;   
+    grid-auto-flow: column; 
+    justify-content: center;
+}
+
+/*https://www.w3schools.com/css/css3_images.asp*/
+
+.pic-container{
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-container{
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
 .videoBanner{
     position: relative;
     width: 100%;
@@ -124,7 +155,6 @@ li a:hover{
     border-radius: 6px;
     
     transition: all 300ms ease-in-out;
-    
 }
 
 .button:hover{
@@ -133,25 +163,6 @@ li a:hover{
     color: black;
     cursor:pointer;
     transform: scale(1.1);
-}
-
-.thumbnail{
-    height: 40vh;
-    width: 32vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/thumbnailStatic.png"); 
-    border-radius: 5px;
-}
-
-
-.thumbnail:hover {
-    height: 40vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
-    background-image: url("../images/thumbnailImage.gif");
 }
 
 @media (min-aspect-ratio: 16/9) {
