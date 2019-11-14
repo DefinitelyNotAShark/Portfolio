@@ -99,17 +99,16 @@ li a:hover{
 
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/
 
-.wrapper{
-    padding: 10px;
-    
+.wrapper{   
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 20px;
     
-    grid-template-columns: 2;
-    grid-auto-rows: 1;   
-    grid-auto-flow: column; 
-    justify-content: center;
+/*    make 3 columns that take up an equal amount of space*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    justify-items: center;
 }
+
 
 /*https://www.w3schools.com/css/css3_images.asp*/
 
