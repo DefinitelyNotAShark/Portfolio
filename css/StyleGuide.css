@@ -69,7 +69,7 @@ h1{
     text-align: center;
     font-size: 40px;
     padding: 20px;
-    border-bottom: 1.5px solid #26ccff;
+    border-bottom: 1.5px solid #3b3b3b;
 }
 
 main{
@@ -129,6 +129,15 @@ li a:hover{
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     justify-items: center;
+}
+
+.identifier{
+    position: absolute;
+    background-color: #000000;
+    color: #FFFFFF;
+    
+    padding: 5px;
+    z-index: 1000; /*Keep it in front of the picture*/
 }
 
 
