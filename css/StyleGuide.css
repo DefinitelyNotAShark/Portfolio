@@ -11,7 +11,7 @@
 header{   
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
-    color: #00fbff;  
+    color: #00fbff; 
 }
 
 .banner{
@@ -146,8 +146,19 @@ li a:hover{
 .pic-container{
   width: 90%;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+-moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
   overflow: hidden
+}
+
+.pic-container:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    -moz-box-shadow: 1px 1px 5px #26ccff;
+    -webkit-box-shadow: 1px 1px 5px #26ccff;
+        box-shadow: 1px 1px 5px #26ccff;
 }
 
 .pic-container img{   
