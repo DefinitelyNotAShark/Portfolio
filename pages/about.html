@@ -4,8 +4,9 @@
 <!--HEAD-->
 <head>
   <title>About</title>
-  <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="../css/StyleGuide.css" />
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="../css/StyleGuide.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap');
 </style> 
@@ -15,21 +16,26 @@
 <body> 
 <!--HEADER-->
 <header>
-     <ul>
-        <li><a href="../index.html">Games</a></li>
-        <li><a href="pages/about.html"  class="active">About</a></li>    
-        <li><a href="pages/arFrame.html">AR View</a></li> 
-     </ul>
-        
-        <div class="banner">Sophia Kneznekoff</div>
-        <div class="belowBanner"><span class="programmerGreen">Programmer</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="gameDesignerBlue">Game Designer</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="designerYellow">UX Designer</span></div>      
+      <div class="topnav" id="myTopnav">
+        <div class="logo" href="../index.html" ><img src="../images/SophieIcon.png" width="50px"></div>
+        <div class="nav">
+            <a href="../index.html">Games</a>
+            <a href="#pages" class="active">About</a>
+            <a href="#contact">AR View</a>
+            <a href="javascript:void(0);" class="icon" onclick="CreateResponsiveNav()"><i class="fa fa-bars"></i></a>
+        </div>
+    </div>    
 </header>
     
 <!--MAIN-->
-<main>
-
+<main class="kakatteMain">
+        <img src="../images/Sophie.png" class="fullLogo">
+    <div class="gameBox">
+        <h2 class="GameTitle">About Me</h2>
+        <p>This is the place where the about me text goes</p>
+    </div>
     
-    
+    <script src="../js/events.js"></script>
 </main>
     
 <footer></footer>

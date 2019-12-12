@@ -4,8 +4,9 @@
 <!--HEAD-->
 <head>
   <title>Portfolio Home</title>
-  <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/StyleGuide.css" />
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/StyleGuide.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap');
 </style> 
@@ -15,23 +16,29 @@
 <body> 
 <!--HEADER-->
 <header>
+    
+    <div class="topnav" id="myTopnav">
+        <div class="logo" href="index.html" ><img src="images/SophieIcon.png" width="50px"></div>
+        <div class="nav">
+            <a href="index.html" class="active">Games</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/arFrame.html">AR View</a>
+            <a href="javascript:void(0);" class="icon" onclick="CreateResponsiveNav()"><i class="fa fa-bars"></i></a>
+        </div>
+    </div> 
+    
+</header>
+    
     <div class="videoBanner">
         <section class="videoContainer">
-            <video autoplay muted loop id="myVideo">
+            <video autoplay muted loop id="myVideo" >
             <source src="images/VFXVideos.mp4" type="video/mp4">
             </video>    
         </section>
         
-     <ul>
-        <li><a href="page1.html" class="active">Games</a></li>
-        <li><a href="pages/about.html">About</a></li>    
-        <li><a href="pages/arFrame.html">AR View</a></li> 
-     </ul>
-        
         <div class="banner">Sophia Kneznekoff</div>
         <div class="belowBanner"><span class="programmerGreen">Programmer</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="gameDesignerBlue">Game Designer</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="designerYellow">UX Designer</span></div>      
     </div>
-</header>
     
 <!--MAIN-->
 <main>
@@ -39,19 +46,24 @@
 <h1>Games</h1>
     <div class="wrapper">
         <!--grid item one-->
-        <div class="pic-container">
-            <div class="identifier">Multiplayer</div>
+        <div class="pic-container" onclick="location.href='pages/KakatteAbout.html';">
+            <div class="identifier">E3 Finalist</div>
             <img src="images/kakatteTitleThumbnail.PNG" alt="Kakatte game image" style="width: 100%">
             <div class="text-container">
                 <h2>Kakatte Koi Yo!</h2>
-                <p>Kakatte Koi Yo! (Bring it On!) is a multiplayer fighting game that features cat characters that battle with fish. It has been featured at E3 in the College Game Competition as finalists. it has been released on itch.io and will be coming to Steam soon.</p>
+                <ul>
+                    <li>Scripted gameplay for 3 types of controllers and keyboard</li>
+                    <li>Created particles for combat</li>
+                    <li>Created Finite State Machines to facilitate combat system</li>
+                    <li>Hooked up animations</li>
+                </ul>
             </div>
         </div>
         
         <!--grid item two-->
-        <div class="pic-container">
+        <div class="pic-container" onclick="location.href='pages/HellevatorAbout.html';">
             <div class="identifier">Virtual Reality</div>
-            <img src="images/VRArenaThumbnail.jpg" alt="Hellevator game image" style="width: 100%">
+            <img src="images/hellevator1.jpg" alt="Hellevator game image" style="width: 100%">
             <div class="text-container">
                 <h2>Hellevator</h2>
                 <p>Hellevator is a VR fighting game where the player armed with a sword-gun hybrid battles waves of demons at each level of the arena turned elevator.<br>
@@ -60,7 +72,7 @@
         </div>
         
         <!--grid item three-->
-        <div class="pic-container">
+        <div class="pic-container" onclick="location.href='pages/BanggoraAbout.html';">
             <div class="identifier">Arcade</div>
             <img src="images/banggoraThumbnail2.PNG" alt="Banggora game image" style="width: 100%"> 
             <div class="text-container">
@@ -71,24 +83,26 @@
         </div>
         
         <!--grid item three-->
-        <div class="pic-container">
+        <div class="pic-container" onclick="location.href='pages/PollenNationAbout.html';">
             <div class="identifier">Arcade</div>
-            <img src="images/PollenNationGameplay_Moment.jpg" alt="Pollen Nation image" style="width: 100%"> 
+            <img src="images/pollennation2.jpg" alt="Pollen Nation image" style="width: 100%"> 
             <div class="text-container">
                 <h2>Pollen Nation</h2>
                 <p>Pollen Nation is an arcade game created for a 2 day game jam.</p>
             </div>
         </div>
-        <!--grid item three-->
-        <div class="pic-container">
-            <div class="identifier">Solo Project</div>
-            <img src="images/starCapture2.PNG" alt="Star image" style="width: 100%"> 
-            <div class="text-container">
-                <h2>i was a star</h2>
-                <p>i was a star is a minimalistic collection game created for a 3 day game jam.</p>
-            </div>
-        </div>
+<!--        grid item three-->
+<!--        <div class="pic-container">-->
+<!--            <div class="identifier">Solo Project</div>-->
+<!--            <img src="images/starCapture2.PNG" alt="Star image" style="width: 100%"> -->
+<!--            <div class="text-container">-->
+<!--                <h2>i was a star</h2>-->
+<!--                <p>i was a star is a minimalistic collection game created for a 3 day game jam.</p>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
+    <script src="js/events.js"></script>
+    
 </main>
 <footer></footer>
 
