@@ -21,6 +21,11 @@ header{
     position: relative; 
 }
 
+footer{
+    padding: 20px;
+    background-color: black;
+}
+
 .banner{
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
