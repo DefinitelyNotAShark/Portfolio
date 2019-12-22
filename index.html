@@ -15,45 +15,41 @@
 <!--BODY-->
 <body> 
 <!--HEADER-->
-<header>
-    
+<header>  
     <div class="topnav" id="myTopnav">
         <div class="logo" href="index.html" ><img src="images/SophieIcon.png" width="50px"></div>
-        <div class="nav">
-            <a href="index.html" class="active">Games</a>
-            <a href="pages/about.html">About</a>
-            <a href="pages/arFrame.html">AR View</a>
+        <div class="nav font-one font-size-small">
+            <a href="index.html" class="active White">Games</a>
+            <a href="pages/TechDemos.html" class="White">Tech Demos</a>
+            <a href="pages/about.html" class="White">About Me</a>
             <a href="javascript:void(0);" class="icon" onclick="CreateResponsiveNav()"><i class="fa fa-bars"></i></a>
         </div>
     </div> 
-    
 </header>
+      
+<!--MAIN-->
+<main> 
+    <div class="banner">
+        <span class="White font-one font-size-big short-fade">Hi, I'm Sophia Kneznekoff,<br></span>
+        <span class="Blue font-one font-size-small long-fade" style="margin-left: 100px;">a programmer and game developer.</span>
+    </div>   
     
     <div class="videoBanner">
-        <section class="videoContainer">
-            <video autoplay muted loop id="myVideo" >
+        <video autoplay muted loop id="myVideo" onended="LoopVideo()" >
             <source src="images/VFXVideos.mp4" type="video/mp4">
-            </video>    
-        </section>
-        
-        <div class="banner">Sophia Kneznekoff</div>
-        <div class="belowBanner"><span class="programmerGreen">Programmer</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="gameDesignerBlue">Game Designer</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="designerYellow">UX Designer</span></div>      
+        </video>     
     </div>
-    
-<!--MAIN-->
-<main>
     
 <h1>Games</h1>
     <div class="wrapper">
         <!--grid item one-->
         <div class="pic-container" onclick="location.href='pages/KakatteAbout.html';">
-            <div class="identifier">E3 Finalist</div>
+            <div class="identifier">Multiplayer</div>
             <img src="images/kakatteTitleThumbnail.PNG" alt="Kakatte game image" style="width: 100%">
             <div class="text-container">
                 <h2>Kakatte Koi Yo!</h2>
                 <ul>
                     <li>Scripted gameplay for 3 types of controllers and keyboard</li>
-                    <li>Created particles for combat</li>
                     <li>Created Finite State Machines to facilitate combat system</li>
                     <li>Hooked up animations</li>
                 </ul>
