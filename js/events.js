@@ -14,3 +14,7 @@ function CreateResponsiveNav() {
     x.className = "topnav";
   }
 }
+
+function GoToGames(){
+    document.getElementById("game-page").scrollIntoView();
+}
