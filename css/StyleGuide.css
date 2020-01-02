@@ -97,38 +97,6 @@ MAIN GAME STUFF
     text-align: center;
 }
 
-.Kakatte{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/kakatte5.PNG");
-}
-
-.Hellevator{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/hellevator1.jpg");
-}
-
-.Banggora{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/banggoraThumbnail.png");
-}
-
-.PollenNation{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/pollennation5.jpg");
-}
-
-.kakatteMain{
-   background-color: #0b0b24;
-}
-
-.hellevatorMain{
-    background-color: #545251;
-}
-
-.banggoraMain{
-    background-color: #330118;
-}
-
-.pollenNationMain{
-    background-color: #542f2f;
-}
-
 /*________________________________
 NAVBAR IMPROVED
 --------------------------------*/
@@ -257,21 +225,9 @@ main{
     text-align: center;
 }
 
-.GameTitle{
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 50px;
-    color:coral;
-    text-shadow: 2px 2px #000000;
-}
-
 iframe{
     margin: 0 auto;
     display: block;
-}
-
-.gameBox{
-    color: #f01a70;
-    margin: 20px;
 }
 
 /*________________________________
@@ -288,12 +244,6 @@ SLIDESHOW
     -webkit-box-shadow: 1px 1px 5px #000000;
         box-shadow: 1px 1px 5px #000000;
   overflow: hidden
-}
-
-.block-container{
-    display: inline-block;
-    vertical-align: top;
-    padding: 30px;
 }
 
 .mySlides {
