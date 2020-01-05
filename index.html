@@ -11,6 +11,9 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap');
 </style> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+</script>
 </head>
 
 <!--BODY-->
@@ -20,7 +23,20 @@
     <div class="topnav" id="myTopnav">
         <div class="logo" href="index.html" ><img src="images/SophieIcon.png" width="50px" alt="logo-img"></div>
         <div class="nav font-one font-size-small">
-            <a href="index.html" class="active White">Games</a>
+            <a href="index.html" class="White active-nav">Home</a>
+            
+        <div class="dropdown">
+            <a class="dropbtn" href="#games">Games 
+                    <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="pages/KakatteAbout.html">Kakatte Koi Yo!</a>
+                <a href="pages/HellevatorAbout.html">Hellevator</a>
+                <a href="pages/BanggoraAbout.html">Banggora</a>
+                <a href="pages/PollenNationAbout.html">Pollen Nation</a>
+            </div>
+        </div> 
+            
             <a href="pages/TechDemos.html" class="White">Tech Demos</a>
             <a href="pages/about.html" class="White">About Me</a>
             <a href="javascript:void(0);" class="White icon" onclick="CreateResponsiveNav()"><i class="fa fa-bars"></i></a>
@@ -41,7 +57,7 @@
         </video>     
     </div>
     
-   <div class="White font-size-big font-one centered">Games</div>
+   <div class="White font-size-big font-one centered" id="games">Games</div>
     <div class="wrapper">
         <!--grid item one-->
         <div class="pic-container" onclick="location.href='pages/KakatteAbout.html';">
@@ -85,6 +101,7 @@
 <!--        </div>-->
     </div>
     <script src="js/events.js"></script>
+    
     
 </main>
 <footer></footer>
