@@ -37,7 +37,18 @@
             </div>
         </div> 
             
-            <a href="pages/TechDemos.html" class="White">Tech Demos</a>
+            <div class="dropdown">
+            <a class="dropbtn" href="#demos">Tech Demos 
+                    <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="pages/KakatteAbout.html">Kakatte Koi Yo!</a>
+                <a href="pages/HellevatorAbout.html">Hellevator</a>
+                <a href="pages/BanggoraAbout.html">Banggora</a>
+                <a href="pages/PollenNationAbout.html">Pollen Nation</a>
+            </div>
+        </div> 
+            
             <a href="pages/about.html" class="White">About Me</a>
             <a href="javascript:void(0);" class="White icon" onclick="CreateResponsiveNav()"><i class="fa fa-bars"></i></a>
         </div>
@@ -47,8 +58,10 @@
 <!--MAIN-->
 <main> 
     <div class="banner">
+             <div class="Green font-two font-size-small short-fade">Note: This portfolio is still being put together. Please understand that some pages may be unfinished.</div><br>
         <span class="White font-one font-size-big short-fade">Hi, I'm Sophia Kneznekoff,<br></span>
         <span class="Blue font-one font-size-small long-fade" style="margin-left: 100px;">a programmer and game developer.</span>
+        
     </div>   
     
     <div class="videoBanner">
@@ -70,7 +83,7 @@
         <!--grid item two-->
         <div class="pic-container" onclick="location.href='pages/HellevatorAbout.html';">
             <div class="identifier font-one">Virtual Reality</div>
-            <img src="images/hellevator1.jpg" alt="Hellevator game image" style="width: 100%">
+            <img src="images/hell1.jpg" alt="Hellevator game image" style="width: 100%">
             <div class="text-container Blue font-size-big font-one">Hellevator
             <div class="White font-size-small font-two">A VR wave fighting game for the Oculus Rift.</div></div>
         </div>
@@ -99,6 +112,41 @@
 <!--                <p>i was a star is a minimalistic collection game created for a 3 day game jam.</p>-->
 <!--            </div>-->
 <!--        </div>-->
+    </div>
+    
+    <div class="White font-size-big font-one centered" id="demos">Tech Demos</div>
+    <div class="wrapper">
+        <!--grid item one-->
+        <div class="pic-container" onclick="location.href='#';">
+            <div class="identifier font-one">C# Console Application</div>
+            <img src="images/hackerImage1.PNG" alt="Hacker-Typer-Image" style="width: 100%">
+            <div class="text-container Blue font-size-big font-one">Type Like a Hacker
+            <div class="White font-size-small font-two">A desktop toy that spits letters out for each key pressed on the keyboard to make it look like hacking.</div></div>
+        </div>
+        
+        <!--grid item two-->
+        <div class="pic-container" onclick="location.href='pages/HellevatorAbout.html';">
+            <div class="identifier font-one">Virtual Reality</div>
+            <img src="images/hell1.jpg" alt="Hellevator game image" style="width: 100%">
+            <div class="text-container Blue font-size-big font-one">Hellevator
+            <div class="White font-size-small font-two">A VR wave fighting game for the Oculus Rift.</div></div>
+        </div>
+        
+        <!--grid item three-->
+        <div class="pic-container" onclick="location.href='pages/BanggoraAbout.html';">
+            <div class="identifier font-one">Arcade</div>
+            <img src="images/banggoraThumbnail2.PNG" alt="Banggora game image" style="width: 100%"> 
+              <div class="text-container Blue font-size-big font-one">Banggora
+            <div class="White font-size-small font-two">A 3D game made in 6 days for a game jam.</div></div>
+        </div>
+        
+        <!--grid item three-->
+        <div class="pic-container" onclick="location.href='pages/PollenNationAbout.html';">
+            <div class="identifier font-one">Arcade</div>
+            <img src="images/pollennation2.jpg" alt="Pollen Nation image" style="width: 100%"> 
+            <div class="text-container Blue font-size-big font-one">Pollen Nation
+            <div class="White font-size-small font-two">A 2D game made in 2 days</div></div>
+        </div>
     </div>
     <script src="js/events.js"></script>
     

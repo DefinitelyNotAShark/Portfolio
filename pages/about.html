@@ -7,6 +7,7 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="../css/StyleGuide.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/icon2.ico">
 <style>
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap');
 </style> 
@@ -17,24 +18,45 @@
 <!--HEADER-->
 <header>
       <div class="topnav" id="myTopnav">
-        <div class="logo" href="../index.html" ><img src="../images/SophieIcon.png" width="50px"></div>
-        <div class="nav">
-         <a href="../index.html">Games</a>
-            <a href="about.html" class="active">About</a>
-            <a href="arFrame.html">AR View</a>
-            <a href="javascript:void(0);" class="icon" onclick="CreateResponsiveNav()"><i class="fa fa-bars"></i></a>
+        <div class="logo" href="index.html" ><img src="../images/SophieIcon.png" width="50px" alt="logo-img"></div>
+        <div class="nav font-one font-size-small">
+            <a href="../index.html" class="White">Home</a>
+            
+        <div class="dropdown">
+            <a class="dropbtn" href="#games">Games 
+                    <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="KakatteAbout.html">Kakatte Koi Yo!</a>
+                <a href="HellevatorAbout.html">Hellevator</a>
+                <a href="BanggoraAbout.html">Banggora</a>
+                <a href="PollenNationAbout.html">Pollen Nation</a>
+            </div>
+        </div> 
+            
+            <a href="TechDemos.html" class="White">Tech Demos</a>
+            <a class="active-nav" href="about.html" class="White">About Me</a>
+            <a href="javascript:void(0);" class="White icon" onclick="CreateResponsiveNav()"><i class="fa fa-bars"></i></a>
         </div>
-    </div>    
+    </div>     
 </header>
     
 <!--MAIN-->
 <main class="kakatteMain">
+      <h2 class="Blue font-size-big font-one centered">About Me</h2><br><br>
+    <div class="two-column-wrapper">
+        <section>
         <img src="../images/Sophie.png" class="fullLogo">
-    <div class="gameBox">
-        <h2 class="GameTitle">About Me</h2>
-        <p>This is the place where the about me text goes</p>
-    </div>
+        </section>
     
+        <section>
+            <p class="White font-size-small font-two ">I love making games and learning new ways to make programs enjoyable! I am a soon-to-be graduate of Columbia College Chicago with a BFA in game programming and a minor in game design.</p>
+            
+            <p class="White font-size-small font-two"><br>I have an artistic background and have interned as a UX and UI designer at 2 seperate companies. While I was there, I learned how to work with a team and how to work remotely from home while still keeping an open line of communication. I have participated in 9 game jams and am constantly trying to learn new ways to be efficient and keep myself organized.</p><br>
+            
+            <p class="White font-size-small font-two">I've made programs for all types of platforms including Virtual Reality, Augmented Reality, PC, Android, and Web. My goals for this year are   to publish a game for Android, make augmented reality business cards, and learn more about web development.</p>
+        </section>
+    </div>
     <script src="../js/events.js"></script>
 </main>
     
