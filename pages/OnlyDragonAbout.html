@@ -51,8 +51,8 @@
     <br>
     
     <p class="White font-size-small font-two centered">
-        Pollen Nation is a 2D timed arcade game where the player takes the role of a bee whose job is to rally other bees <br> and pollenate as many flowers before time runs out while avoiding birds who eat the smaller bees.
-        <br><br>This game was made in 2 days for the <span><a href="https://itch.io/jam/mini-jam-36-nature" target="_blank">Mini Jam </a></span>with the theme of <span class="Green">nature.</span>
+        The Only Dragon Left is a bullet hell boss battle game that pits the last dragon against a skyship.<br>The player must defeat the skyship before running out of health. Thankfully it's armed with ice breath and one use of a Special Attack. <br> This game features AI with a ship that follows the player and becomes harder to defeat once it has been weakened.
+        <br><br>This game was made in 2 days for the <span><a href="https://itch.io/jam/gmtk-2019" target="_blank">Game Maker's Toolkit Jam </a></span>with the theme of <span class="Green">only one.</span>
         <br><br><br>
 
     <div class="two-column-wrapper">
@@ -63,7 +63,7 @@
         <ul class="White font-size-small font-two centered" style="list-style-type:none;">
             <li>Role: Programmer</li>
             <li>Platform: PC</li>
-            <li>Genre: Arcade</li>
+            <li>Genre: Bullet Hell</li>
             <li>Development Time: 2 days</li>
         </ul>
         </section>
@@ -86,11 +86,11 @@
     <div class="Blue font-size-big font-one underline">What I Worked On</div>
     </div>
         <ul class="White font-size-small font-two" style="display: table; margin: 0 auto;">
-            <li style="list-style-type: none">Most of the programming including:</li>
+            <li style="list-style-type: none">Most of the programming and more including:</li>
             <li>An input handler</li>
-            <li>A flocking algorithm for the bees with a movable center</li>
-            <li>Creation of SFX and editing music</li>
-            <li>Bee formations including hiding, circling, and flocking</li>
+            <li>An AI system that uses Unity State Machine Behaviors</li>
+            <li>Creation of SFX</li>
+            <li>Sliced and hooked up animations</li>
         </ul>l
         
     <br><br><br>   
@@ -102,25 +102,44 @@
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <img src="../images/banggoraThumbnail.PNG" style="width:100%">
+    <img src="../images/DragonPic1.jpg" style="width:100%">
   </div>
 
   <div class="mySlides fade">
-    <img src="../images/banggoraThumbnail2.PNG" style="width:100%">
+    <img src="../images/DragonPic2.jpg" style="width:100%">
   </div>
           
 <div class="mySlides fade">
-    <img src="../images/banggora3.jpg" style="width:100%">
+    <img src="../images/DragonPic3.jpg" style="width:100%">
     </div>
           
     <div class="mySlides fade">
-    <img src="../images/banggora4.jpg" style="width:100%">
+    <img src="../images/DragonPic4.jpg" style="width:100%">
     </div>
           
     <div class="mySlides fade">
-    <img src="../images/banggora5..PNG" style="width:100%">
+    <img src="../images/DragonPic5.jpg" style="width:100%">
     </div>
-    
+          
+    <div class="mySlides fade">
+    <img src="../images/DragonPic6.jpg" style="width:100%">
+    </div>   
+          
+    <div class="mySlides fade">        
+    <img src="../images/DragonPic7.jpg" style="width:100%">
+    </div>    
+          
+    <div class="mySlides fade">     
+    <img src="../images/DragonPic8.jpg" style="width:100%">
+    </div>    
+        
+    <div class="mySlides fade">     
+    <img src="../images/DragonPic9.jpg" style="width:100%">
+    </div>    
+          
+    <div class="mySlides fade">
+    <img src="../images/DragonPic10.jpg" style="width:100%">
+    </div>
 
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -134,22 +153,27 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>  
+  <span class="dot" onclick="currentSlide(6)"></span>  
+  <span class="dot" onclick="currentSlide(7)"></span>  
+  <span class="dot" onclick="currentSlide(8)"></span>  
+  <span class="dot" onclick="currentSlide(9)"></span>  
+  <span class="dot" onclick="currentSlide(10)"></span>
 </div>   
     
-    <br><br><br>
-    <div class="Blue font-size-big font-one centered">Flocking</div>
-    <div class="White font-size-small font-two centered">My idea for this game started with wanting to learn how to write a flocking algorithm, and when I was working on it, I realized I could tweak the variables to resemble a beehive, and playing around with that code led me to use it as a mechanic in the game.</div>
+<br><br><br>
+    
+    <div class="Blue font-size-big font-one centered">Navigation</div>
+    <div class="White font-size-small font-two centered">This ship follows a pattern of behaviors when fighting the player. It has 2 base states of shooting while following the player and switches to the harder one when it's health is halved. After a randomly decided period of time, it stops and chooses 1 of 2 power shots toward the player. Power shots are randomly chosen.</div>
     <br><br>
+    
+    <img src="../images/navigationChart.png" class="centered-image" style="width:60%">
     
     <br><br><br>
     <div class="Blue font-size-big font-one centered">Links</div>
-    <ul class="White font-size-small font-two centered" style="list-style-type: none" >
-        <li><a href="https://github.com/DefinitelyNotAShark/Tiny_Planet_Game" target="_blank">Pollen Nation on GitHub</a></li>
-    </ul>
     <br>
     
-    <iframe frameborder="0" src="https://itch.io/embed/379338?bg_color=afbfd2&amp;fg_color=251d38&amp;link_color=fa5b79&amp;border_color=6e86a0" width="552" height="167"><a href="https://fxy.itch.io/banggora">Moonlight Banggora by Fxy, DefinitelyNotAShark</a></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/462665?bg_color=222222&amp;fg_color=a8639b&amp;link_color=6c88ff&amp;border_color=ae6a6e" width="552" height="167"><a href="https://definitelynotashark.itch.io/the-only-dragon-left">The Only Dragon Left by DefinitelyNotAShark</a></iframe>
 
     <script src="../js/events.js"></script>
 </main>
